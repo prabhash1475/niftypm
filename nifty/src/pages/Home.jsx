@@ -1,6 +1,7 @@
 
-import { Box, Button, Center,  Divider, Flex, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Center, Container, Divider, Flex, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
 import { FcGoogle, FcOk } from "react-icons/fc";
+import { FaRecordVinyl } from "react-icons/fa";
 import React from 'react'
 
 
@@ -277,7 +278,7 @@ const Home = () => {
             <Box backgroundColor={'gray.200'} mt={10} p={30}>
 
 
-                <Box m='auto' mt={'50px'} borderRadius="10px" p={10}  w={"60%"} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                <Box m='auto' mt={'50px'} borderRadius="10px" p={10} w={"60%"} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
                     <Text fontFamily={"cursive"} fontSize={25}> Nifty is by far the best productivity tool I've ever used.
                         They have consolidated so many tools down to one for my team, without compromising the experience.
                     </Text>
@@ -290,16 +291,180 @@ const Home = () => {
             <Heading as='h6' color={'gray.500'} mt='80px' mb='40px' fontSize={'24px'}>BUILT FOR EVERY TEAM</Heading>
 
 
-            <Box display={'flex'} m='auto'>
-                <Box>
+            <Box w={'80%'} display={'flex'} m='auto' mb={20}>
+                <Box w={"50%"} bg={"teal.50"} p='10' textAlign={'left'}>
                     <Heading>It’s so easy to be efficient</Heading>
+                    <Text ml={"10px"} mt={10} fontSize="lg">Team alignment, productivity, & smarter decisions come naturally when your data is not fragmented across multiple tools.</Text>
+                    <Heading fontSize={20} mt={10} color={"teal.600"} display={'flex'} gap="10px">{<FaRecordVinyl />}Import into Nifty</Heading>
+                    <Text m={7}>Import from Asana, Basecamp, ClickUp, Jira, Trello, and Wrike — or import your .CSV & Excel sheets to pick up right where you left off.</Text>
+                    <Heading fontSize={20} mt={10} color={"teal.600"} display={'flex'} gap="10px">{<FaRecordVinyl />}Native Integrations</Heading>
+                    <Text m={7}>We integrate with all of your favorite tools to make it easy to push and sync data without disrupting your workflow. Whether you’re in engineering, design, management or sales — we have you covered.</Text>
                 </Box>
-
+                {/* ////////////////////////////////////////////////////////////////////////////////// */}
                 <Box>
 
-                <Image src='https://i.postimg.cc/QMy2gtp5/Screenshot-2022-09-30-193611.png'/>
+                    <Image src='https://i.postimg.cc/QMy2gtp5/Screenshot-2022-09-30-193611.png' />
                 </Box>
-                
+
+            </Box>
+
+            {/* /////////////////////////// rotation end */}
+            <Box m={'auto'} w={"80%"} display={'flex'} justifyContent="space-between">
+                <Box w={'50%'} textAlign={"left"}>
+                    <Text color={"teal"}>DON'T TAKE OUR WORD FOR IT</Text>
+                    <Heading>Nifty is acclaimed for its
+                        design and performance ✨</Heading>
+                </Box>
+                <Box>
+                    <Image mt={10} src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=330952&theme=light' />
+                </Box>
+            </Box>
+            {/* marquee///////////////////////////////////////////////// */}
+            <marquee scrollamount="20" loop="-1">
+                <Box gap={"10px"} display={"flex"}>
+
+
+
+
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+
+
+                </Box>
+            </marquee>
+
+            {/* /////lrft to right */}
+
+            <marquee scrollamount="20" loop="-1" direction="right"  >
+                <Box gap={"10px"} display={"flex"}>
+
+
+
+
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                        </Text>
+                        <Text mt={5}>RIM N. KAY</Text>
+                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                    </Box>
+
+
+                </Box>
+            </marquee>
+
+
+            {/* input box */}
+
+            <Box mt={"70px"} width={"50%"} m='auto' p="70px" border={"1px solid teal"} borderRadius="10px">
+                <Center>  <Image w={"40px"} src='https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg' /></Center>
+                <Heading m={10}>Get Started Now</Heading>
+                <Text m={10}>It takes less than 2 mins to sign up and create your first project or import your data from anywhere.</Text>
+                <InputGroup m={10} bg='gray.300' borderRadius={'20px'} size='md'>
+                    <Input outline={"teal"}
+                        pr='4.5rem'
+
+                        placeholder='name@company.com'
+                    />
+                    <InputRightElement width='4.5rem'>
+                        <Button spacing={4} size='sm' bg="#59bbac" color="white"  >
+                            Get Started
+                        </Button>
+                    </InputRightElement>
+                </InputGroup>
+                <Box>
+                    <Button variant='outline' w={"auto"} bg='white.100' leftIcon={<FcGoogle />}>Sign up with google</Button>
+                    <Text>Free forever. No credit card required.</Text>
+                </Box>
             </Box>
         </>
     )
