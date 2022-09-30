@@ -1,7 +1,9 @@
 
-import { Box, Button, Center, Container, Divider, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
-import { FcGoogle } from "react-icons/fc";
+import { Box, Button, Center,  Divider, Flex, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
+import { FcGoogle, FcOk } from "react-icons/fc";
 import React from 'react'
+
+
 
 
 function BasicUsage() {
@@ -92,7 +94,13 @@ const Home = () => {
             </Center>
             <Heading as='h6' color={'gray.500'} mt='80px' mb='40px' fontSize={'24px'}>SAY GOODBYE TO STATUS MEETINGS</Heading>
 
-            <Box w='80%' m='auto' p={20} borderRadius={10} backgroundImage={'linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);'}>
+
+
+            {/* First Tabs///////////////////////00 */}
+
+
+
+            <Box w='80%' m='auto' p={20} pb="15px" borderRadius={10} backgroundImage={'linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);'}>
                 {/* <Center> */}
                 <Tabs >
                     <TabList>
@@ -132,6 +140,166 @@ const Home = () => {
                     </TabPanels>
                 </Tabs>
                 {/* </Center> */}
+                <Box bg={'white'} w='90%' m='auto' borderRadius="md"  >
+                    <Heading as='h4' fontSize={18} p={"20px"} color={'teal'}>Try Nifty Now.Thanks us latter</Heading>
+
+                </Box>
+            </Box>
+
+
+
+            {/* second tabs */}
+
+
+
+            <Heading as='h6' color={'gray.500'} mt='80px' mb='40px' fontSize={'24px'}>BUILT FOR EVERY TEAM</Heading>
+
+
+
+            <Box w='80%' m='auto' pt={20} pb="15px" borderRadius={10} backgroundImage={'linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);'}>
+                {/* <Center> */}
+                <Tabs >
+                    <TabList>
+                        <Tab fontSize={'20px'}>Engineering</Tab> <Box m={'auto'} fontSize={'20px'} display={'flex'} gap='20px' color={'teal.600'}> <Text>.</Text> <Text>.</Text> <Text>.</Text><Text>.</Text></Box>
+                        <Tab fontSize={'20px'}>Sales</Tab><Box m={'auto'} fontSize={'20px'} display={'flex'} gap='20px' color={'teal.600'}> <Text>.</Text> <Text>.</Text> <Text>.</Text><Text>.</Text></Box>
+                        <Tab fontSize={'20px'}>Marketing</Tab><Box m={'auto'} fontSize={'20px'} display={'flex'} gap='20px' color={'teal.600'}> <Text>.</Text> <Text>.</Text> <Text>.</Text><Text>.</Text></Box>
+                        <Tab fontSize={'20px'}>Product</Tab><Box m={'auto'} fontSize={'20px'} display={'flex'} gap='20px' color={'teal.600'}> <Text>.</Text> <Text>.</Text> <Text>.</Text><Text>.</Text></Box>
+                        <Tab fontSize={'20px'}>Clint Management</Tab><Box m={'auto'} fontSize={'20px'} display={'flex'} gap='20px' color={'teal.600'}> <Text>.</Text> <Text>.</Text> <Text>.</Text><Text>.</Text></Box>
+                        <Tab fontSize={'20px'}>IT</Tab>
+                    </TabList>
+
+                    <TabPanels>
+                        <TabPanel>
+                            {/* <Flex gap={10}> */}
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>Engineering</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Empower your sales teams by adding flow to their work with real-time reporting and insights using automated workflows.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />} Real-time progress reporting with Milestones</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Custom development workflows with if/then rules</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Custom development workflows with if/then rules</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%'>
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.c481d6e.webp' />
+                                </Box>
+                            </Box>
+                            {/* </Flex> */}
+                        </TabPanel>
+                        <TabPanel>
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>Sales</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Empower your sales teams by adding flow to their work with real-time reporting and insights using automated workflows.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />} Track lead status and values for pipeline visibility</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Create & track marketing campaigns as Milestones</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Automate the creation of projects upon closing of leads</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%'>
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.a9e1772.webp' />
+                                </Box>
+                            </Box>
+                        </TabPanel>
+                        <TabPanel>
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>Marketing</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Deliver better results with fewer tools. Manage tasks, campaigns, and marketing content with real-time collaboration in one place.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />} Expedite approval for creatives with Proofing</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Create & track marketing campaigns as Milestones</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Align content schedules using Calendar View for Tasks</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%'>
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.10c81ee.webp' />
+                                </Box>
+                            </Box>
+                        </TabPanel>
+                        <TabPanel>
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>Product</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Build better products with team alignment. Create clear product roadmaps and automate progress reporting as tasks are completed.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />} Prioritize & track feature sprints as Milestones</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Build spec documents using Nifty or Google Docs</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Improve decision-making with custom Project Embeds</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%' >
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.fade5e2.webp' />
+                                </Box>
+                            </Box>
+                        </TabPanel>
+                        <TabPanel>
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>Client Management</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Never lose a client due to poor communication again. Real-time collaboration to shorten feedback cycles and automate progress reporting.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />}Instant messaging & one-click video meetings</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Automate ticket assignments with status assignees</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Plan project timelines & deployments using Roadmaps</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%' >
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.0c3cfc6.webp' />
+                                </Box>
+                            </Box>
+                        </TabPanel>
+                        <TabPanel>
+                            <Box display={'flex'} gap={20} m={'auto'}>
+                                <Box w='50%'  >
+                                    <Box textAlign={'left'} fontSize={20} lineHeight='30px'>
+                                        <Heading>IT</Heading>
+                                        <Text mt={10} mb={10} w='80%' fontSize={20}>Streamline, centralize, and modernize your workflows. One app to manage your processes without letting anything fall through the cracks again.</Text>
+                                        <Text display={'flex'} mb={5} gap='10px' > {<FcOk p='10px' />} Gather tickets using forms & prioritize resolutions</Text>
+                                        <Text display={'flex'} mb={5} gap='10px'> {<FcOk p='10px' />}Automate ticket assignments with status assignees</Text>
+                                        <Text display={'flex'} gap='10px' > {<FcOk p='10px' />}Plan project timelines & deployments using Roadmaps</Text>
+                                    </Box>
+                                </Box>
+                                <Box w='50%'>
+                                    <Image w='100%' src='https://niftypm.com/_nuxt/img/large@1x.37d8320.webp' />
+                                </Box>
+                            </Box>
+                        </TabPanel>
+                    </TabPanels>
+                </Tabs>
+                {/* </Center> */}
+
+            </Box>
+
+            {/* send tabs end////////////////////////////////////////////////// */}
+            <Box backgroundColor={'gray.200'} mt={10} p={30}>
+
+
+                <Box m='auto' mt={'50px'} borderRadius="10px" p={10}  w={"60%"} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                    <Text fontFamily={"cursive"} fontSize={25}> Nifty is by far the best productivity tool I've ever used.
+                        They have consolidated so many tools down to one for my team, without compromising the experience.
+                    </Text>
+                    <Text mt={20}>RIM N. KAY</Text>
+                    <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                </Box>
+                <Text mt={20} fontSize={20} color={'teal'}>Read more Nifty reviews on G2</Text>
+            </Box>
+
+            <Heading as='h6' color={'gray.500'} mt='80px' mb='40px' fontSize={'24px'}>BUILT FOR EVERY TEAM</Heading>
+
+
+            <Box display={'flex'} m='auto'>
+                <Box>
+                    <Heading>It’s so easy to be efficient</Heading>
+                </Box>
+
+                <Box>
+
+                <Image src='https://i.postimg.cc/QMy2gtp5/Screenshot-2022-09-30-193611.png'/>
+                </Box>
+                
             </Box>
         </>
     )
