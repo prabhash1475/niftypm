@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from '@chakra-ui/icons'
+// import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Menu } from '@chakra-ui/react'
 import { MenuList } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
@@ -7,6 +7,7 @@ import { MenuButton } from '@chakra-ui/react'
 import { Flex, Image, Box, Text } from '@chakra-ui/react'
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
             <Box p={6}>
                 <Flex justifyContent='space-between'>
                     <Box>
-                        <Image w={20} src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" />
+                    <Link to='/'>  <Image w={20} src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" /></Link>
                     </Box>
                     <Box>
                         <Flex gap={10}>
@@ -107,8 +108,8 @@ const Navbar = () => {
                         </Flex>
                     </Box>
                     <Box display={"flex"} gap={5}>
-                        <Button h='32px' boxShadow='xs' bg='whiteAlpha.100' _hover={{ color: "#59bbac", boxShadow: 'xs', borderRadius: "md" }}>Login</Button>
-                        <Button h='32px' _hover={{ bg: "#59bbac", color: "white" }} bg="#59bbac" color="white">Sign Up</Button>
+                     <Link to='/login'>   <Button h='32px' boxShadow='xs' bg='whiteAlpha.100' _hover={{ color: "#59bbac", boxShadow: 'xs', borderRadius: "md" }}>Login</Button></Link>
+                     <Link to='/signup'>  <Button h='32px' _hover={{ bg: "#59bbac", color: "white" }} bg="#59bbac" color="white">Sign Up</Button></Link>
                     </Box>
                 </Flex>
             </Box >
