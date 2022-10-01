@@ -381,6 +381,7 @@ const Home = () => {
             </marquee>
 
             {/* /////lrft to right */}
+            <Box>
 
             <marquee scrollamount="20" loop="-1" direction="right"  >
                 <Box gap={"10px"} display={"flex"}>
@@ -441,31 +442,147 @@ const Home = () => {
 
                 </Box>
             </marquee>
+            </Box>
 
 
             {/* input box */}
 
-            <Box mt={"70px"} width={"50%"} m='auto' p="70px" border={"1px solid teal"} borderRadius="10px">
+            <Box  width={"50%"} m='auto' mt={20} p="70px" border={"1px solid teal"} borderRadius="10px">
                 <Center>  <Image w={"40px"} src='https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg' /></Center>
                 <Heading m={10}>Get Started Now</Heading>
                 <Text m={10}>It takes less than 2 mins to sign up and create your first project or import your data from anywhere.</Text>
-                <InputGroup m={10} bg='gray.300' borderRadius={'20px'} size='md'>
+                <Box m={'auto'}>
+                <InputGroup m={10} bg='gray.300'   borderRadius={'20px'} size='md'>
                     <Input outline={"teal"}
-                        pr='4.5rem'
-
+                        pr='5.5rem'
+                        p={1}
                         placeholder='name@company.com'
                     />
-                    <InputRightElement width='4.5rem'>
-                        <Button spacing={4} size='sm' bg="#59bbac" color="white"  >
+                    <InputRightElement width='6.5rem'>
+                        <Button p={'auto'}  bg="#59bbac" color="white"  >
                             Get Started
                         </Button>
                     </InputRightElement>
                 </InputGroup>
-                <Box>
-                    <Button variant='outline' w={"auto"} bg='white.100' leftIcon={<FcGoogle />}>Sign up with google</Button>
-                    <Text>Free forever. No credit card required.</Text>
+                <Divider/>
+                    <Button mt={10} variant='outline' w={"90%"} bg='white.100' leftIcon={<FcGoogle />}>Sign up with google</Button>
+                    <Text mt={10}>Free forever. No credit card required.</Text>
                 </Box>
             </Box>
+            <Center bg={"gray.50"} display={'flex'} m='auto'>
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+                <Image w={100} src='https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg' />
+            </Center>
+
+            <Box bg={"gray.50"}>
+                <Image src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxOTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjM1IiBkPSJNMCAxYzg5LjY5NiA3MS43NjMgMTY5LjY2NiAxMzEuNjggMjYyLjA2NCAxMzYuNDg3IDkyLjM5OCA0LjgwNyAxMzAuMjIxLTQwLjAwMiAxOTMuOTgxLTQwLjAwMiA2My43NiAwIDk0LjU1OSAyMC42MDIgMTE1LjA5MiA0MC4wMDJDNTkxLjY3IDE1Ni44ODcgNjMyLjczNiAxOTUgNzEwLjAwNCAxOTVzMTE1LjA5Mi00MC41MTcgMTM0LjU0NC01Ny41MTNDODY0IDEyMC40OSA5MTUuODcyIDg1LjEyNCA5ODguMjc4IDg1LjEyNGM3Mi40MDIgMCA5NC4wMjIgMTkuODQ0IDE2Mi42NDIgMTcuMzQgNjguNjItMi41MDUgOTIuOTQtMzIuOTYzIDE2NC4yNi0zMi45NjMgNzEuMzMgMCA1OC4zNiAyMy4zNDkgMTI0LjgyIDIzLjM0OSIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAiIHkxPSIxIiB4Mj0iMTQ0MCIgeTI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY1OUY4Ii8+PHN0b3Agb2Zmc2V0PSIuMTk4IiBzdG9wLWNvbG9yPSIjQUU3MkZGIi8+PHN0b3Agb2Zmc2V0PSIuNDA2IiBzdG9wLWNvbG9yPSIjNzBDOUU4Ii8+PHN0b3Agb2Zmc2V0PSIuNjIiIHN0b3AtY29sb3I9IiMwMUFCOUQiLz48c3RvcCBvZmZzZXQ9Ii44MjUiIHN0b3AtY29sb3I9IiNGRTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=' />
+           
+           <Center mt={10} >
+            <table margin="auto" cellPadding={"5px"} width={"80%"}>
+                <tr  >
+                    <td>PRODUCT</td>
+                    <td>RESOURCES</td>
+                    <td>TRUST</td>
+                    <td>MADE FOR</td>
+                    <td>COMPARISION</td>
+                    <td>BLOG</td>
+                </tr>
+                <tr>
+                    <td>Milestone</td>
+                    <td>Change Log</td>
+                    <td>Ptivacy</td>
+                    <td>Client Management</td>
+                    <td>Asana Alternative</td>
+                    <td>How to Fix</td>
+                </tr>
+                <tr>
+                    <td>Discussions</td>
+                    <td>Blog</td>
+                    <td>Help Center</td>
+                    <td>Agilen</td>
+                    <td>Airtable</td>
+                    <td>BLOG</td>
+                </tr>
+                <tr>
+                    <td>Taske</td>
+                    <td>Intigration</td>
+                    <td>Terms of use</td>
+                    <td>Digital Agencies</td>
+                    <td>Basecamp Alternative</td>
+                    <td>Remote Collabrstion</td>
+                </tr>
+                <tr>
+                    <td>Docs & Files</td>
+                    <td>Apps</td>
+                    <td>TRUST</td>
+                    <td>Security</td>
+                    <td>Legal Case managment</td>
+                    <td>Clarizen</td>
+                </tr>
+                <tr>
+                    <td>Time Tracking</td>
+                    <td>RESOURCES</td>
+                    <td>Status</td>
+                    <td> Marketin Team</td>
+                    <td>ClickUp Alternative</td>
+                    <td>Workload with time</td>
+                </tr>
+                <tr>
+                    <td>Reaporting</td>
+                    <td>Affiliation</td>
+                    <td></td>
+                    <td>Product Teams</td>
+                    <td>Confluence Alternative</td>
+                    <td>Software for law firm</td>
+                </tr>
+                <tr>
+                    <td>Reaporting</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Flow Alternative</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Project Portfolios</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Hive Alternative</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>JIRA Alternative</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Monday.com Alternative</td>
+                    <td></td>
+                </tr>
+                
+
+            </table>
+           </Center>
+            </Box>
+            <Divider />
+            <Container>
+            <Box textAlign={"left"} display={'flex'} gap="20px">
+                <Image w={20} gap={"20px"} src='https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg'></Image>
+                 <Text>2022  ©   Nifty Technology, Inc. All right reserved</Text>
+            </Box>
+            </Container>
         </>
     )
 }
