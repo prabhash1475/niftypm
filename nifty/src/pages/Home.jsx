@@ -1,6 +1,7 @@
 
-import { Box, Button, Center, Container, Divider, Flex, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Center, Divider, Heading, Image, Input, InputGroup, InputRightElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure } from '@chakra-ui/react'
 import { FcGoogle, FcOk } from "react-icons/fc";
+import { FaFacebook, FaLinkedin, FaTwitter, FaPlay } from 'react-icons/fa'
 import { FaRecordVinyl } from "react-icons/fa";
 import React from 'react'
 
@@ -11,7 +12,21 @@ function BasicUsage() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-            <Image w='45%' src='https://niftypm.com/_nuxt/img/large@2x.00707a1.webp' onClick={onOpen} />
+            <Box w='40%' h={"300px"} backgroundImage="url('https://niftypm.com/_nuxt/img/large@2x.00707a1.webp')"
+                backgroundPosition="center"
+                backgroundRepeat="repeat"
+                backgroundSize="cover"
+                borderRadius={"20px"}
+                onClick={onOpen} 
+                >
+
+
+                {/* <Image  borderRadius={"20px"} w='100%' h={"300px"} src='https://niftypm.com/_nuxt/img/large@2x.00707a1.webp' onClick={onOpen} /> */}
+                <Box mt={40} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+
+                    <FaPlay size={70}/>
+                </Box>
+            </Box>
 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
@@ -19,7 +34,7 @@ function BasicUsage() {
 
                     <ModalCloseButton />
                     <ModalBody>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5GaV5EZX22o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5GaV5EZX22o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="FullScreen"></iframe>
                     </ModalBody>
 
                     <ModalFooter>
@@ -383,88 +398,88 @@ const Home = () => {
             {/* /////lrft to right */}
             <Box>
 
-            <marquee scrollamount="20" loop="-1" direction="right"  >
-                <Box gap={"10px"} display={"flex"}>
+                <marquee scrollamount="20" loop="-1" direction="right"  >
+                    <Box gap={"10px"} display={"flex"}>
 
 
 
 
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
-                    <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
-                        <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
-                            Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
-                        </Text>
-                        <Text mt={5}>RIM N. KAY</Text>
-                        <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
-                    </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
+                        <Box w={"30%"} m='auto' mt={'50px'} borderRadius="10px" p={10} backgroundImage={"linear-gradient(to right top, #fe57b6, #f47ed0, #e99de2, #e2b7ed, #e0cff0, #dbd6f4, #d8ddf7, #d8e3f7, #bae1fe, #91e1fc, #61e1ef, #38dfd4)"}>
+                            <Text w={"20%"} fontFamily={"cursive"} fontSize={20}>In the world full of PM tools,
+                                Nifty  <br></br> is awesome and stand apart. Tried<br></br> the "big" players and just keep<br /> coming back to Nifty.
+                            </Text>
+                            <Text mt={5}>RIM N. KAY</Text>
+                            <Text mt={5}>ENGINEERING LEAD, EMOVIS</Text>
+                        </Box>
 
 
-                </Box>
-            </marquee>
+                    </Box>
+                </marquee>
             </Box>
 
 
             {/* input box */}
 
-            <Box  width={"50%"} m='auto' mt={20} p="70px" border={"1px solid teal"} borderRadius="10px">
+            <Box width={"50%"} m='auto' mt={20} p="70px" border={"1px solid teal"} borderRadius="10px">
                 <Center>  <Image w={"40px"} src='https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg' /></Center>
                 <Heading m={10}>Get Started Now</Heading>
                 <Text m={10}>It takes less than 2 mins to sign up and create your first project or import your data from anywhere.</Text>
                 <Box m={'auto'}>
-                <InputGroup m={10} bg='gray.300'   borderRadius={'20px'} size='md'>
-                    <Input outline={"teal"}
-                        pr='5.5rem'
-                        p={1}
-                        placeholder='name@company.com'
-                    />
-                    <InputRightElement width='6.5rem'>
-                        <Button p={'auto'}  bg="#59bbac" color="white"  >
-                            Get Started
-                        </Button>
-                    </InputRightElement>
-                </InputGroup>
-                <Divider/>
+                    <InputGroup m={10} bg='gray.300' borderRadius={'20px'} size='md'>
+                        <Input outline={"teal"}
+                            pr='5.5rem'
+                            p={1}
+                            placeholder='name@company.com'
+                        />
+                        <InputRightElement width='6.5rem'>
+                            <Button p={'auto'} bg="#59bbac" color="white"  >
+                                Get Started
+                            </Button>
+                        </InputRightElement>
+                    </InputGroup>
+                    <Divider />
                     <Button mt={10} variant='outline' w={"90%"} bg='white.100' leftIcon={<FcGoogle />}>Sign up with google</Button>
                     <Text mt={10}>Free forever. No credit card required.</Text>
                 </Box>
@@ -480,109 +495,115 @@ const Home = () => {
 
             <Box bg={"gray.50"}>
                 <Image src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxOTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjM1IiBkPSJNMCAxYzg5LjY5NiA3MS43NjMgMTY5LjY2NiAxMzEuNjggMjYyLjA2NCAxMzYuNDg3IDkyLjM5OCA0LjgwNyAxMzAuMjIxLTQwLjAwMiAxOTMuOTgxLTQwLjAwMiA2My43NiAwIDk0LjU1OSAyMC42MDIgMTE1LjA5MiA0MC4wMDJDNTkxLjY3IDE1Ni44ODcgNjMyLjczNiAxOTUgNzEwLjAwNCAxOTVzMTE1LjA5Mi00MC41MTcgMTM0LjU0NC01Ny41MTNDODY0IDEyMC40OSA5MTUuODcyIDg1LjEyNCA5ODguMjc4IDg1LjEyNGM3Mi40MDIgMCA5NC4wMjIgMTkuODQ0IDE2Mi42NDIgMTcuMzQgNjguNjItMi41MDUgOTIuOTQtMzIuOTYzIDE2NC4yNi0zMi45NjMgNzEuMzMgMCA1OC4zNiAyMy4zNDkgMTI0LjgyIDIzLjM0OSIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAiIHkxPSIxIiB4Mj0iMTQ0MCIgeTI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY1OUY4Ii8+PHN0b3Agb2Zmc2V0PSIuMTk4IiBzdG9wLWNvbG9yPSIjQUU3MkZGIi8+PHN0b3Agb2Zmc2V0PSIuNDA2IiBzdG9wLWNvbG9yPSIjNzBDOUU4Ii8+PHN0b3Agb2Zmc2V0PSIuNjIiIHN0b3AtY29sb3I9IiMwMUFCOUQiLz48c3RvcCBvZmZzZXQ9Ii44MjUiIHN0b3AtY29sb3I9IiNGRTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=' />
-           
-           <Center mt={10} >
-            <table margin="auto" cellPadding={"5px"} width={"80%"}>
-                <tr  >
-                    <td>PRODUCT</td>
-                    <td>RESOURCES</td>
-                    <td>TRUST</td>
-                    <td>MADE FOR</td>
-                    <td>COMPARISION</td>
-                    <td>BLOG</td>
-                </tr>
-                <tr>
-                    <td>Milestone</td>
-                    <td>Change Log</td>
-                    <td>Ptivacy</td>
-                    <td>Client Management</td>
-                    <td>Asana Alternative</td>
-                    <td>How to Fix</td>
-                </tr>
-                <tr>
-                    <td>Discussions</td>
-                    <td>Blog</td>
-                    <td>Help Center</td>
-                    <td>Agilen</td>
-                    <td>Airtable</td>
-                    <td>BLOG</td>
-                </tr>
-                <tr>
-                    <td>Taske</td>
-                    <td>Intigration</td>
-                    <td>Terms of use</td>
-                    <td>Digital Agencies</td>
-                    <td>Basecamp Alternative</td>
-                    <td>Remote Collabrstion</td>
-                </tr>
-                <tr>
-                    <td>Docs & Files</td>
-                    <td>Apps</td>
-                    <td>TRUST</td>
-                    <td>Security</td>
-                    <td>Legal Case managment</td>
-                    <td>Clarizen</td>
-                </tr>
-                <tr>
-                    <td>Time Tracking</td>
-                    <td>RESOURCES</td>
-                    <td>Status</td>
-                    <td> Marketin Team</td>
-                    <td>ClickUp Alternative</td>
-                    <td>Workload with time</td>
-                </tr>
-                <tr>
-                    <td>Reaporting</td>
-                    <td>Affiliation</td>
-                    <td></td>
-                    <td>Product Teams</td>
-                    <td>Confluence Alternative</td>
-                    <td>Software for law firm</td>
-                </tr>
-                <tr>
-                    <td>Reaporting</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Flow Alternative</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Project Portfolios</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Hive Alternative</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>JIRA Alternative</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Monday.com Alternative</td>
-                    <td></td>
-                </tr>
-                
 
-            </table>
-           </Center>
+                <Center mt={10} >
+                    <table margin="auto" cellPadding={"5px"} width={"80%"}>
+                        <tr  >
+                            <td>PRODUCT</td>
+                            <td>RESOURCES</td>
+                            <td>TRUST</td>
+                            <td>MADE FOR</td>
+                            <td>COMPARISION</td>
+                            <td>BLOG</td>
+                        </tr>
+                        <tr>
+                            <td>Milestone</td>
+                            <td>Change Log</td>
+                            <td>Ptivacy</td>
+                            <td>Client Management</td>
+                            <td>Asana Alternative</td>
+                            <td>How to Fix</td>
+                        </tr>
+                        <tr>
+                            <td>Discussions</td>
+                            <td>Blog</td>
+                            <td>Help Center</td>
+                            <td>Agilen</td>
+                            <td>Airtable</td>
+                            <td>BLOG</td>
+                        </tr>
+                        <tr>
+                            <td>Taske</td>
+                            <td>Intigration</td>
+                            <td>Terms of use</td>
+                            <td>Digital Agencies</td>
+                            <td>Basecamp Alternative</td>
+                            <td>Remote Collabrstion</td>
+                        </tr>
+                        <tr>
+                            <td>Docs & Files</td>
+                            <td>Apps</td>
+                            <td>TRUST</td>
+                            <td>Security</td>
+                            <td>Legal Case managment</td>
+                            <td>Clarizen</td>
+                        </tr>
+                        <tr>
+                            <td>Time Tracking</td>
+                            <td>RESOURCES</td>
+                            <td>Status</td>
+                            <td> Marketin Team</td>
+                            <td>ClickUp Alternative</td>
+                            <td>Workload with time</td>
+                        </tr>
+                        <tr>
+                            <td>Reaporting</td>
+                            <td>Affiliation</td>
+                            <td></td>
+                            <td>Product Teams</td>
+                            <td>Confluence Alternative</td>
+                            <td>Software for law firm</td>
+                        </tr>
+                        <tr>
+                            <td>Reaporting</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Flow Alternative</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Project Portfolios</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Hive Alternative</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>JIRA Alternative</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Monday.com Alternative</td>
+                            <td></td>
+                        </tr>
+
+
+                    </table>
+                </Center>
             </Box>
             <Divider />
-            <Container>
-            <Box textAlign={"left"} display={'flex'} gap="20px">
-                <Image w={20} gap={"20px"} src='https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg'></Image>
-                 <Text>2022  ©   Nifty Technology, Inc. All right reserved</Text>
+            <Box display={'flex'} justifyContent={"space-around"} mt="20px">
+                <Box textAlign={"left"} display={'flex'} gap="20px">
+                    <Image w={20} gap={"20px"} src='https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg'></Image>
+                    <Text>2022  ©   Nifty Technology, Inc. All right reserved</Text>
+
+                </Box>
+                <Box display={'flex'} gap='5px' color={"teal.600"}>
+                    <FaFacebook size={'20px'} />
+                    <FaLinkedin size={'20px'} />
+                    <FaTwitter size={'20px'} />
+                </Box>
             </Box>
-            </Container>
         </>
     )
 }

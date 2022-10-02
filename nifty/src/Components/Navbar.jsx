@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
-            <Box p={6}>
+            <Box bg={"white"} pos="fixed" w={"100%"} mb={"10px"} top={0} p={6}>
                 <Flex justifyContent='space-between'>
                     <Box>
                     <Link to='/'>  <Image w={20} src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" /></Link>
